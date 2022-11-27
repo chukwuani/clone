@@ -1346,6 +1346,14 @@ aside{
 }
 
 @media screen and (max-width: 768px){
+        :root{
+        --body-bg: #fff;
+        --divider: #fff;
+        --hover-bg: #fafafa;
+        --text-color: #262626;
+        --blue-btn-color: #0095f6;
+    }
+    
     nav{
         position: fixed;
         display: none;
@@ -1448,6 +1456,45 @@ aside{
     display: flex;
     align-items: center;
     overflow: hidden;
+    }
+    
+        .story-next-btn{
+        display: none;
+        position: absolute;
+        right: 20px;
+        background-image: url(./Img/slide\ btn.png);
+        background-repeat: no-repeat;
+        background-position: -305px -282px;
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        z-index: 999;
+        cursor: pointer;
+        -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, .0975));
+        filter: drop-shadow(0 0 5px rgba(0, 0, 0, .0975));
+    }
+    
+    .story-go-back-btn{
+        display: none;
+        position: absolute;
+        left: 20px;
+        background-image: url(./Img/slide\ btn.png);
+        background-repeat: no-repeat;
+        background-position: -303px -235px;
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        border-radius: 50%;
+        z-index: 999;
+        border: none;
+        outline: none;
+        cursor: auto;
+        opacity: 0;
+        -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, .0975));
+        filter: drop-shadow(0 0 5px rgba(0, 0, 0, .0975));
     }
 
     /* PROFILE DROPDOWN */
